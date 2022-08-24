@@ -8,10 +8,8 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: const Text("Flutter App"),
       ),
-      body: Center(
-        child: Container(
-          child: const Text('Welcome'),
-        ),
+      body: const Center(
+        child: Text('Welcome'),
       ),
       drawer: Mydrawer(),
     );
