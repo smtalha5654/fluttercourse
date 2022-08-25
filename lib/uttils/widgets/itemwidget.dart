@@ -10,7 +10,10 @@ class ItemWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       child: ListTile(
-        leading: Image.network(item.image),
+        onTap: () {
+          print("${item.name} pressed");
+        },
+        leading: Image.asset("assets/images/iphone12.jpg"),
         title: Text(item.name),
         subtitle: Text(item.desc),
         trailing: Text("\$${item.price}"),

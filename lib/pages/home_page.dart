@@ -8,13 +8,13 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Flutter App"),
+        title: const Text("Catalog App"),
       ),
       body: ListView.builder(
-          itemCount: CatalogModel.items.length,
+          itemCount: Catalogmodel.items.length,
           itemBuilder: (context, index) {
             return ItemWidget(
-              item: CatalogModel.items[index],
+              item: Catalogmodel.items[index],
             );
           }),
       drawer: Mydrawer(),
